@@ -54,14 +54,14 @@ function update_progress($percent) {
 
 if (array_key_exists('pcb',$_POST)) {
 
-// Connect to Ethereum node (e.g., via Infura)
-//$providerUrl = "https://polygon-mainnet.infura.io/v3/f2c0c1563cf947df92a967fbfd07fbc5";
-$sweb3 = new SWeb3("https://polygon-mainnet.infura.io/v3/f2c0c1563cf947df92a967fbfd07fbc5");
+// Connect to Polygon node (e.g., via Infura)
+
+$sweb3 = new SWeb3("https://polygon-mainnet.infura.io/v3/infura-api-key");
 
 // Define your wallet private key and contract details
-$privKey = "6862d67cda79b91009216c3d670c7b2e8d2ca283d9bd24eff660b72ce331ecaa";
-$fromAdd = "0xAB0874D3e7Cd256Cd3F1A9480c3b0C01109E2117";
-$usdtContAdd = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
+$privKey = "send-wallet-priv-key";
+$fromAdd = "send-wallet-address";
+$usdtContAdd = "send-wallet-contract";
 $sweb3->chainId = 137; //Polygon Network mainnet
 
 // USDT contract ABI (simplified with only the 'transfer' function)
