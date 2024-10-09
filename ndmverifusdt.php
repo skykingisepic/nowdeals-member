@@ -19,8 +19,8 @@ function gettxhash($txhash) {
 //$url = 'https://api.polygonscan.com/api?module=account&action=txlistinternal';
 //$url .= '&txhash='.$txhash.'&apikey=WTQ6S62HIF579XYG79W1BN182HSUQ541Z9';
 $url = 'https://api.polygonscan.com/api?module=account&action=tokentx';
-$url .= '&address=0xAB0874D3e7Cd256Cd3F1A9480c3b0C01109E2117&startblock=0&endblock=999999999&sort=asc';
-$url .= '&page=1&offset=10&apikey=WTQ6S62HIF579XYG79W1BN182HSUQ541Z9';
+$url .= '&address=your-wallet-address&startblock=0&endblock=999999999&sort=asc';
+$url .= '&page=1&offset=10&apikey=your-api-key';
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($curl, CURLOPT_HTTPHEADER, [ 'Content-Type: application/json' ]);
