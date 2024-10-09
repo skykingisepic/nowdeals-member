@@ -1,4 +1,4 @@
-#NowDeals Member and Admin Portal
+# NowDeals Member and Admin Portal
 
 Clone Repo in web page folder (/var/www/html) and rename nowdeals-member to nowdeals (PHPMailer refers to this path near SMTP info)
 
