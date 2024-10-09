@@ -14,7 +14,8 @@ Create a mariadb table from nowdeals.sql
 
 Crypto transactions are based on Tether USDT using the Polygon Network
 
-USDT info obtained using polygonscan.com API
+USDT info obtained using polygonscan.com API (API Key required in code)
 
-USDT transfers using sweb3-php
+USDT transfers using sweb3-php (send wallet secret key, send wallet address, and send contract required in code)
+
 
