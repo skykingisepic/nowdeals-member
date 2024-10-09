@@ -1,9 +1,9 @@
 <?php
 //session_start();
-$_SESSION['dbhost'] = '149.28.249.46';
+$_SESSION['dbhost'] = 'your-ip-or-domain';
 $_SESSION['dbuser'] = 'root';
-$_SESSION['dbpwd'] = 'nDepic9*';
+$_SESSION['dbpwd'] = 'pwd;
 $_SESSION['dbname'] = 'nowdeals';
-$_SESSION['admin'] = 'nDm-Admin*';
+$_SESSION['admin'] = 'admin-pwd';
 ?>
 
