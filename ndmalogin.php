@@ -94,7 +94,7 @@ if (isset($_SESSION['login'])) {
 <button class="button" name="upl">Upload File</button></td>
 </form>
 
-<form action="ndmverifusdt.php" method="POST"><td><center>
+<form action="ndmvdate.php" method="POST"><td><center>
 <button class="button" name="upl">Verify USDT</button></td></tr>
 </form>
 
