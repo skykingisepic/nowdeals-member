@@ -87,14 +87,15 @@ if (($handle = fopen("/var/www/html/uploads/mlmcpay.csv", "r")) == FALSE) {
    echo '<br><form action="ndmalogin.php" method="POST">';
    echo '<button class="button" name="home">Home</button></form>';
 } 
+$i=1;
 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
    $num = count($data);
-   if ($num !== 3) { continue; }
+   if ($num !== 3) { $i++; continue; }
    $email = $data[0];
    $usdtadd = $data[1];
    $commpend = $data[2] . "000000";
 
-   $pct = round(($i / $nr) * 100);
+   $pct = round(($i / $num) * 100);
 
    $result = $contract->send('transfer', [$usdtadd, $commpend], $extra_data);
 
