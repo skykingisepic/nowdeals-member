@@ -41,12 +41,14 @@ while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
    if ($num !== 7) { continue; }
    //$num = count($data);
    $email = $data[0];
-   $join = $data[1];
-   $cntry = $data[2];
-   $usdt = $data[3];
-   $usdta = $data[4];
-   $hash = $data[5];
-   $radd = $data[6];
+   $phn = $data[1]
+   $idate = $data[2];
+   $join = date_format($idate, 'Y-m-d');
+   $cntry = $data[3];
+   $usdt = $data[4];
+   $usdta = $data[5];
+   $hash = $data[6];
+   $radd = $data[7];
     
    if ($usdt != "0" && $usdt != "100" && $usdt != "500" && $usdt != "1000" && $usdt != "2500" && $usdt != "5000") {
       continue;
@@ -56,7 +58,7 @@ while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
    $refby = 'mlmgrp'; //or 'nowdeals'
    $ip = '';
    $pwd = randcode();
-   $phn = '';
+   //$phn = '';
    //$join = date('Y-m-d');
    $refcode = randcode();
    $_SESSION['memail'] = $email;
