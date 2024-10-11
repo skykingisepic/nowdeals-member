@@ -38,8 +38,8 @@ if (($handle = fopen("/var/www/html/uploads/mlmnew.csv", "r")) == FALSE) {
 }
 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
    $num = count($data);
-   if ($num !== 7) { continue; }
-   //$num = count($data);
+   if ($num !== 8) { continue; }
+   
    $email = $data[0];
    $phn = $data[1]
    $idate = $data[2];
